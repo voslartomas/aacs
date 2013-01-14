@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android audio car system</string>
+    <string name="menu_settings">Nastavení</string>
+    <string name="title_activity_main">Audio Car System</string>
+    <string name="button_default_title">Vyberte aplikaci</string>
+    <string name="title_speed">Rychlost: </string>
+    <string name="speed">Neznámá rychlost</string>
+    <string name="title_switchkmh">km/h</string>
+    <string name="title_switchmph">mph</string>
+    <string name="title_switchms">m/s</string>
+    <string name="desc_compass">Kompas</string>
+    <string name="title_orientation">Orientace</string>
+    <string name="todo">TODO</string>
+    <string name="dialog_application_title">Vyberte aplikaci</string>
+	<string name="dialog_ok_button">Přiřadit aplikaci</string>
+	<string name="dialog_cancel_button">Zrušit</string>
+	<string name="context_delete">Smazat přiřazení</string>
+	<string name="new_pick">Přiřadit novou</string>
+	<string name="preference_c_main">Hlavní nastavení</string>
+	<string name="units">Jednotky rychlosti</string>
+	
+	<string-array name="settings_units">settings_unitssettings_unitssettings_unitssettings_unitssettings_units
+	    <item>km/h</item>
+	    <item>mph</item>
+	    <item>m/s</item>
+	</string-array>
+	
+	<string-array name="settings_units_value">
+	    <item>0</item>
+	    <item>1</item>
+	    <item>2</item>
+	</string-array>
+	    <string name="exit">Ukončit</string>
+	
+</resources>
