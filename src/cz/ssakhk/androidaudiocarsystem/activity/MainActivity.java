@@ -350,7 +350,7 @@ public class MainActivity extends Activity implements SensorEventListener, Locat
 			speedFinal = location.getSpeed();
 		}
 		
-		TextView speed = (TextView) this.findViewById(R.id.title_speed);
+		TextView speed = (TextView) this.findViewById(R.id.speed);
 		speed.setText(tp.calculateInto(speedFinal, units));
 	}
 
