@@ -30,13 +30,14 @@ public final class R {
         public static final int button3=0x7f0a0006;
         public static final int button4=0x7f0a0007;
         public static final int button5=0x7f0a0008;
-        public static final int delete=0x7f0a000b;
+        public static final int delete=0x7f0a000c;
         public static final int imageView1=0x7f0a0001;
         public static final int layout_main=0x7f0a0000;
-        public static final int menu_settings=0x7f0a0009;
-        public static final int new_pick=0x7f0a000c;
-        public static final int quit=0x7f0a000a;
+        public static final int menu_settings=0x7f0a000a;
+        public static final int new_pick=0x7f0a000d;
+        public static final int quit=0x7f0a000b;
         public static final int speed=0x7f0a0003;
+        public static final int textCompass=0x7f0a0009;
         public static final int title_speed=0x7f0a0002;
     }
     public static final class layout {

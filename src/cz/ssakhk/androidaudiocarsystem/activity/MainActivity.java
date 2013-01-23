@@ -8,6 +8,7 @@ import cz.ssakhk.androidaudiocarsystem.helper.TrackPointItem;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
+import android.graphics.drawable.Drawable;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -273,6 +274,7 @@ public class MainActivity extends Activity implements SensorEventListener, Locat
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
+		    	 Drawable icon = app.loadIcon(getPackageManager());
 		    	 
 		    	 SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
 		         SharedPreferences.Editor editor = settings.edit();
@@ -333,6 +335,24 @@ public class MainActivity extends Activity implements SensorEventListener, Locat
 		mat.postRotate(360 - azimuth);
 		Bitmap bMapRotate = Bitmap.createBitmap(bMap, 0, 0,bMap.getWidth(),bMap.getHeight(), mat, true);
 		iv.setImageBitmap(bMapRotate);
+		
+		TextView tc = (TextView) this.findViewById(R.id.textCompass);
+		
+		if(azimuth >= 0 && azimuth < 45){
+			tc.setText("S");
+		}else if(azimuth >= 45 && azimuth < 90) {
+			tc.setText("SV");
+		}else if(azimuth >= 90 && azimuth < 135) {
+			tc.setText("V");
+		}else if(azimuth >= 180 && azimuth < 225) {
+			tc.setText("JV");
+		}else if(azimuth >= 225 && azimuth < 270) {
+			tc.setText("J");
+		}else if(azimuth >= 270 && azimuth < 315) {
+			tc.setText("JZ");
+		}else if(azimuth >= 315 && azimuth < 360) {
+			tc.setText("Z");
+		}
 	}
 	
 	private void updateLocation(Location location) {

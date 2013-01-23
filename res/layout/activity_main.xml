@@ -2,79 +2,105 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/layout_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-
-   <ImageView
-       android:id="@+id/imageView1"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_alignParentRight="true"
-       android:layout_alignParentTop="true"
-       android:src="@drawable/compass" android:contentDescription="@string/desc_compass"/>
-
-   	<TextView
-   	    android:id="@+id/title_speed"
-   	    android:layout_width="wrap_content"
-   	    android:layout_height="wrap_content"
-   	    android:layout_above="@+id/title_speed"
-   	    android:layout_alignParentLeft="true"
-   	    android:text="@string/title_speed"
-   	    android:textAppearance="?android:attr/textAppearanceLarge" />
-
-   	<TextView
-   	    android:id="@+id/speed"
-   	    android:layout_width="wrap_content"
-   	    android:layout_height="wrap_content"
-   	    android:layout_alignBottom="@+id/imageView1"
-   	    android:layout_alignParentLeft="true"
-   	    android:text="@string/speed"
-   	    android:textAppearance="?android:attr/textAppearanceLarge"
-   	    android:textSize="@dimen/padding_large" />
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+	
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+	    
+	   <ImageView
+	       android:id="@+id/imageView1"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_alignParentRight="true"
+	       android:layout_alignParentTop="true"
+	       android:layout_margin="10dp"
+	       android:contentDescription="@string/desc_compass"
+	       android:src="@drawable/compass" />
+	
+	   	<TextView
+	   	    android:id="@+id/title_speed"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_above="@+id/title_speed"
+	   	    android:layout_alignParentLeft="true"
+	   	    android:layout_alignTop="@id/title_speed"
+	   	    android:text="@string/title_speed"
+	   	    android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	   	<TextView
+	   	    android:id="@+id/speed"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_alignParentLeft="true"
+	   	    android:layout_below="@id/title_speed"
+	   	    android:text="@string/speed"
+	   	    android:textAppearance="?android:attr/textAppearanceLarge"
+	   	    android:textSize="@dimen/padding_large" />
 		
-   	<Button
-   	    android:id="@+id/button1"
-   	    android:layout_width="wrap_content"
-   	    android:layout_height="wrap_content"
-   	    android:layout_alignParentLeft="true"
-   	    android:layout_alignParentRight="true"
-   	    android:layout_below="@+id/speed"
-   	    android:text="@string/button_default_title" />
+   	</RelativeLayout>
    	
-	<Button
-   	    android:id="@+id/button2"
-   	    android:layout_width="wrap_content"
-   	    android:layout_height="wrap_content"
-   	    android:layout_alignParentLeft="true"
-   	    android:layout_alignParentRight="true"
-   	    android:layout_below="@+id/button1"
-   	    android:text="@string/button_default_title" />
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="80dp" >
 
-   	<Button
-   	    android:id="@+id/button3"
-   	    android:layout_width="wrap_content"
-   	    android:layout_height="wrap_content"
-   	    android:layout_alignParentLeft="true"
-   	    android:layout_alignParentRight="true"
-   	    android:layout_below="@+id/button2"
-   	    android:text="@string/button_default_title" />
-
-   	<Button
-   	    android:id="@+id/button4"
-   	    android:layout_width="wrap_content"
-   	    android:layout_height="wrap_content"
-   	    android:layout_alignParentLeft="true"
-   	    android:layout_alignParentRight="true"
-   	    android:layout_below="@+id/button3"
-   	    android:text="@string/button_default_title" />
-
-   	<Button
-   	    android:id="@+id/button5"
-   	    android:layout_width="wrap_content"
-   	    android:layout_height="wrap_content"
-   	    android:layout_alignParentLeft="true"
-   	    android:layout_alignParentRight="true"
-   	    android:layout_below="@+id/button4"
-   	    android:text="@string/button_default_title" />
-   	
-   
+	   	<Button
+	   	    android:id="@+id/button1"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_alignParentLeft="true"
+	   	    android:layout_alignParentRight="true"
+	   	    android:layout_below="@+id/speed"
+	   	    android:text="@string/button_default_title" />
+	   	
+		<Button
+	   	    android:id="@+id/button2"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_alignParentLeft="true"
+	   	    android:layout_alignParentRight="true"
+	   	    android:layout_below="@+id/button1"
+	   	    android:text="@string/button_default_title" />
+	
+	   	<Button
+	   	    android:id="@+id/button3"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_alignParentLeft="true"
+	   	    android:layout_alignParentRight="true"
+	   	    android:layout_below="@+id/button2"
+	   	    android:text="@string/button_default_title" />
+	
+	   	<Button
+	   	    android:id="@+id/button4"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_alignParentLeft="true"
+	   	    android:layout_alignParentRight="true"
+	   	    android:layout_below="@+id/button3"
+	   	    android:text="@string/button_default_title" />
+	
+	   	<Button
+	   	    android:id="@+id/button5"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_alignParentLeft="true"
+	   	    android:layout_alignParentRight="true"
+	   	    android:layout_below="@+id/button4"
+	   	    android:text="@string/button_default_title" />
+	
+	   	<TextView
+	   	    android:id="@+id/textCompass"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_alignParentLeft="true"
+	   	    android:layout_below="@+id/button5"
+   	    	android:text="" />
+	   	
+	   		</RelativeLayout>
+	   		
 </RelativeLayout>
+   	
+   	
